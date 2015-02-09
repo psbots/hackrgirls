@@ -1,0 +1,63 @@
+.thin-strip{
+	width:100%;
+	height:3px;
+	background-color:#fff;
+	position:fixed;
+	top:0px;
+	z-index: 9999;
+
+}
+/* background: url(../img/landing1.jpg) no-repeat scroll center center / cover transparent; */
+#tabzilla{
+	right:15%;
+	z-index: 10000;
+	position:fixed;
+	top:3px;
+}
+.full-width{
+	min-width:100%;
+	max-width:100%;
+	width:100% !important;
+	
+}
+footer{
+	background-color:#565a5c;
+	padding:90px 0px;
+	font-size: 12px;
+}
+footer .copyright{
+	color:#bbb;
+
+}
+footer ul li{
+	list-style-type: none;
+	line-height: 1.2;
+}
+footer .medium-6{
+	padding:0px;
+}
+footer ul a{
+	font-size:12px;
+
+}
+@media only screen and (min-width: 64.063em) and (max-width: 90em) {
+}
+@media only screen and (min-width: 40.063em) and (max-width: 64em) {
+}
+@media only screen and (max-width: 40em){
+	.womoz-title{
+		top:50px;
+	}
+	.womoz-title span{
+		font-size:40px;
+	}
+	.subscribe-form form input[type="submit"]{
+		margin-top:20px;
+		width:40%;
+		margin-left:30%;
+		margin-left:30%;
+	}
+	footer .medium-6{
+		padding-top:15px;
+	}
+}
