@@ -20,6 +20,16 @@
 	width:100% !important;
 	
 }
+body{
+	margin-bottom:15em;
+}
+section.all-wrap{
+	margin-bottom:17em;
+}
+section{
+	z-index: 2;
+	background-color:#fff;
+}
 .heading{
 	font-family: 'Josefin Slab', serif;
 }
@@ -30,6 +40,7 @@
 	display: none;
 	height:200px;
 	background: url(../img/logo.jpeg) no-repeat scroll center center / 50% transparent; 
+	background-color:#fff;
 }
 .landing-section .landing-section-half{
 	height:100%;
@@ -73,8 +84,7 @@
 	color:#f5f5f5;
 }
 .landing-section-half.logo-half{
-	background-color:#fff;
-	background: url(../img/logo.jpeg) no-repeat scroll center center / 50% transparent; 
+	background: url(../img/logo.jpeg) no-repeat scroll center center / 50% #fff; 
 }
 
 .speakers-section{
@@ -109,13 +119,31 @@
 	font-style: italic;
 	font-size: 16px;
 }
+.google-form-div{
+	padding-left:0px;
+	padding-right:0px;
+}
+.google-form-div>div{
+	padding-left:0px;
+	padding-right:0px;
+	margin-bottom: -10px;
+}
+.google-form-div iframe{
+	width:100%;
+	margin:auto;
+}
 #map-canvas{
 	height:400px;
 }
 footer{
 	background-color:#565a5c;
-	padding:50px 0px;
+	padding:70px 0px;
 	font-size: 12px;
+	position: fixed;
+	bottom: 0px;
+	z-index: -1;
+	backface-visibility: hidden;
+	width:100%;
 }
 footer .copyright{
 	color:#bbb;
@@ -149,5 +177,8 @@ footer ul a{
 	}
 	.landing-section-half.desc-half .register-button-div a:last-child {
 		margin-left:0px;
+	}
+	footer .medium-6{
+		padding-top:10px;
 	}
 }
