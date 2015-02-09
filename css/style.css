@@ -11,8 +11,8 @@
 #tabzilla{
 	right:15%;
 	z-index: 10000;
-	position:fixed;
-	top:3px;
+	top:auto;
+	position:absolute;
 }
 .full-width{
 	min-width:100%;
@@ -20,9 +20,101 @@
 	width:100% !important;
 	
 }
+.heading{
+	font-family: 'Josefin Slab', serif;
+}
+.landing-section{
+	height:100vh;
+}
+.mobile-logo-div{
+	display: none;
+	height:200px;
+	background: url(../img/logo.jpeg) no-repeat scroll center center / 50% transparent; 
+}
+.landing-section .landing-section-half{
+	height:100%;
+	border-bottom:1px solid #e5e5e5;
+}
+.landing-section-half.desc-half{
+	background-color:#29ACE2;
+	
+}
+.landing-section-half.desc-half .title{
+	font-family: 'Josefin Slab', serif;
+	padding-top:120px;
+	color:#fff;
+	font-weight:600;
+	font-size:50px;
+}
+.landing-section-half.desc-half .register-button-div a{
+	padding:12px 30px;
+	border-radius:5px;
+}
+.landing-section-half.desc-half .register-button-div a:last-child{
+	margin-left:15px;
+}
+.landing-section-half.desc-half .sharing-div{
+	padding-top:30px;
+}
+.landing-section-half.desc-half .sharing-div .share-text{
+	color:#fff;
+	font-size:28px;
+}
+.landing-section-half.desc-half .sharing-div .share-buttons{
+	color:#fff;
+	font-size:40px;
+}
+.landing-section-half.desc-half .sharing-div .share-buttons a{
+	padding-left:5px;
+	color:#fff;
+}
+.landing-section-half.desc-half .sharing-div .share-buttons a:hover{
+	transition:all ease 0.3s;
+	color:#f5f5f5;
+}
+.landing-section-half.logo-half{
+	background-color:#fff;
+	background: url(../img/logo.jpeg) no-repeat scroll center center / 50% transparent; 
+}
+
+.speakers-section{
+	padding-top:30px;
+	padding-bottom:30px;
+}
+.speakers-section .speaker-wrapper{
+	padding-top:20px;
+}
+.speakers-section .speaker-item{
+	padding:0px;
+
+}
+.speaker-item .img-div{
+
+}
+.speaker-item .img-div img{
+	border-radius: 50%;
+	width:150px;
+	height:150px;
+	border:4px solid #f5f5f5;
+
+}
+.speaker-item .title-div{
+	padding-top:10px;
+	font-size:18px;
+	font-weight: 300;
+}
+.speaker-item .role-div{
+	padding-top:10px;
+	font-weight: 300;
+	font-style: italic;
+	font-size: 16px;
+}
+#map-canvas{
+	height:400px;
+}
 footer{
 	background-color:#565a5c;
-	padding:90px 0px;
+	padding:50px 0px;
 	font-size: 12px;
 }
 footer .copyright{
@@ -45,19 +137,17 @@ footer ul a{
 @media only screen and (min-width: 40.063em) and (max-width: 64em) {
 }
 @media only screen and (max-width: 40em){
-	.womoz-title{
-		top:50px;
+	.mobile-logo-div{
+		display:block;
 	}
-	.womoz-title span{
-		font-size:40px;
+	.landing-section-half.desc-half .title{
+		padding-top:30px;
+		font-size:30px;
 	}
-	.subscribe-form form input[type="submit"]{
-		margin-top:20px;
-		width:40%;
-		margin-left:30%;
-		margin-left:30%;
+	.landing-section-half.logo-half{
+		display: none;
 	}
-	footer .medium-6{
-		padding-top:15px;
+	.landing-section-half.desc-half .register-button-div a:last-child {
+		margin-left:0px;
 	}
 }
