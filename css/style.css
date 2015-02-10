@@ -186,6 +186,10 @@ footer ul a{
 	.no-padding-small{
 		padding:0px;
 	}
+	.landing-section-half.desc-half{
+		height:auto;
+		padding-bottom:30px;
+	}
 	.landing-section-half.desc-half .title{
 		padding-top:30px;
 		font-size:30px;
